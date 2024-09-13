@@ -3,12 +3,12 @@
     private static void Main(string[] args)
     {
         const decimal precio_kilo = 5000; //declaracion constante
+        decimal descuento, precioBruto, precioNeto, precioDescuento;
 
         Console.Write("Cuantos kilos de manzana va a llevar");
         decimal kilo_manzana = Convert.ToDecimal(Console.ReadLine());
 
-        decimal descuento, precioBruto, precioNeto, precioDescuento;
-        kilo_manzana = 5000;
+        
 
             if ( kilo_manzana >= 0 && kilo_manzana <= 2)
         {
@@ -33,8 +33,8 @@
 
         precioNeto = precioBruto - precioDescuento;
 
-        Console.Write($"El total a pagar por{kilo_manzana} es: {precioNeto}");
-        Console.Write($"Se ha aplicado un descuento del {descuento}% que equivale a {precioDescuento}");
+        Console.WriteLine($"El total a pagar por {kilo_manzana} es: {precioNeto}");
+        Console.WriteLine($"Se ha aplicado un descuento del {descuento}% que equivale a {precioDescuento}");
         }
 }
 
