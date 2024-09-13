@@ -33,10 +33,8 @@
 
         precioNeto = precioBruto - precioDescuento;
 
-        Console.Write("Precio bruto:" precioBruto," ");
-
-
-
-    }
+        Console.Write($"El total a pagar por{kilo_manzana} es: {precioNeto}");
+        Console.Write($"Se ha aplicado un descuento del {descuento}% que equivale a {precioDescuento}");
+        }
 }
 
